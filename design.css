@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+/* Header section*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_three-line-icon{
+    height: 50px;
+    width: 50px;
+}
+.header_logo-icon{
+    height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+nav{
+    display: flex
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    margin-right: 15px;
+    background-color: #FF5C1F;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/*Banner section */
+.banner{
+    background-color: #5B00F5;
+}
+#banner_img{
+    height: 45vh;      
+}
+
+/*Our Service Section*/
+#service_text{
+    font-size: 2vw;
+    padding: 5px;
+}
+#service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* How Its Work Section */
+
+#HIwork_text{
+    background-color: #FF5C1F;
+    font-size: 3vw;
+    padding: 5px;
+}
+.HIwork{
+    background-color: #FF5C1F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.work_showing-icon{
+    font-size: larger;
+}
+.work_showing-icon img{
+    height: 30vh;
+    display: inline-block; 
+}
+
+/* hiring starts*/
+#hiring_blank-space{
+    height: 20vh;
+}
+.hiring{
+    display: flex;
+    justify-content: space-around;
+}
+.ban div img{
+    height: 10  0vh;
+    margin: 20px;
+}
+/* Footer starts*/
+footer{
+    background-color: #5B00F5;
+    color: #FFFF;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer_list{
+    margin: 20px;
+    padding: 20px;
+}
+/* new page name next*/
+
+.form{
+    background-color: #5B00F5;
+}
+/*Business.html page*/
+
+.welcome{
+    background-color: #FF5C1F;
+    padding: 10px;
+}
+.sheet-data_rec{
+    height: 150px;
+    background-color: beige;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.sheet-data_box{
+    background-color: black;
+    width: 80vw;
+    height: 500px;
+    position: relative;
+    z-index: -1;
+}
+.sheet-data_frame{
+position: absolute;
+width: 85vw;
+height: 700px;
+top: -150px;
+left: -45px;
+
+}
+.sheet-data_side-box{
+    width: 10vw;
+    height: 500px;
+    background-color: beige;
+}
+.sheet-data{
+    display: flex;
+}
+.sheet-data_border{
+    width: 78.6vw;
+    height: 492px;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 10px;
+}
