@@ -144,8 +144,15 @@
 
          form.addEventListener('submit', e => {
             var x = document.getElementById("getform");
-            var text = x.elements[5].value
+            var text = x.elements[5].value;
+            var name = x.elements[0].value;
+            var pickup = x.elements[9].value;
+            var drop = x.elements[10].value;
             console.log(text)
+            localStorage.setItem('name',name);
+            localStorage.setItem('pickup',pickup);
+            localStorage.setItem('drop',drop);
+            window.Location.href = "thankyou.html";
             e.preventDefault()
             if( text == 110011){
             fetch(scriptURL1, { method: 'POST', body: new FormData(form) })
