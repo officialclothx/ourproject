@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <div>
             <img class="header_three-line-icon" src="img/three lines icon.png" alt="Menu icon">
-            <img class="header_logo-icon" src="img/Logo Icon.png" alt="logo icon">
+            <a href="index.html"><img class="header_logo-icon" src="img/Logo Icon.png" alt="logo icon"></a>
         </div>
         <nav>
             <ul>
                 <li>location</li>
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
                 <li>About Us</li>
-                <li>Services</li>
+                <li><a href="form.html">Services</a></li>
             </ul>
             <button>Loginin / Sign up</button>
         </nav>
@@ -41,7 +41,7 @@
                 <h2>Basic Details</h2>
                 <form class="book_form-area" id="getform" name="submit-to-google-sheet">
                     <div class="book_form-rec">
-                        <input class="book_form_input-box" name="First Name" type="text" placeholder="First Name" required>
+                        <input class="book_form_input-box" name="First Name" type="text" placeholder="First Name" autofocus required>
                         <br>
                         <input class="book_form_input-box" name="Last Name" type="text" placeholder="Last Name">
                     </div><br>
@@ -52,7 +52,7 @@
                     <br> <textarea class="book_form_textarea-box" name="Address" rows="4" cols="50"
                         placeholder="House no./ Street/ City/ Landmark/ State"></textarea>
                     <br>
-                    <input class="pincode" name="pincode" type="number" placeholder="Pincode" required>
+                    <input class="pincode" name="pincode" type="number" min="110011" max="110015" placeholder="Pincode" required>
                     <h2>Booking Details</h2>
                     <input name="Wash" id="Wash" type="checkbox" value="Wash">
                     <label class="book_form_input-label" for="Wash"> Wash</label>
@@ -123,8 +123,8 @@
             Chat Support<br>
         </div>
         <div class="footer_list">
-            For User<br><br>
-            Our Service<br>
+            <a href="index.html">For User</a><br><br>
+            <a href="form.html">Our Service</a><br>
             Feedback<br>
             Mobile App<br>
         </div>
