@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="booking.css">
-    <title>Document</title>
+    <title>Thank You Page</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 </p>
             </div>
             <div class="book_form">
-                <h2 class="form-thanks-text" > Thank You for Booking</h2>
+                <p class="form-thanks-text" id="thanks-message" > Thank You for Booking</p>
                     <br><button class="sendbutton" type="submit" onclick="window.location.href='index.html';" >Go To Home Page</button>
             </div>
         </div>
@@ -95,6 +95,11 @@
             Merchant App<br>
         </div>
     </footer>
+     <script>
+        var name = localStorage.getItem('name');
+        var pickup = localStorage.getItem('pickup');
+        var drop = localStorage.getItem('drop');
+        document.getElementById("thanks-message").innerHTML = "<h3>Thanks "+ name +" for using our service</h3> <br> we will come for pickup between "+ pickup + "<br> and will come to drop between "+ drop;
+    </script>
 </body>
-
 </html>
