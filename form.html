@@ -77,7 +77,7 @@
                         <option value="12:00PM-03:00PM">12:00PM-03:00PM</option>
                         <option value="03:00PM-06:00PM">03:00PM-06:00PM</option>
                     </select> <br>
-                    <br><button class="sendbutton" type="submit" >Send</button>
+                    <br><button class="sendbutton" type="submit" onclick="window.location.href = "thankyou.html";">Send</button>
                 </form>
             </div>
         </div>
@@ -172,6 +172,7 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         }})
+            
              var name = x.elements[0].value;
             var pickup = x.elements[9].value;
             var drop = x.elements[10].value;
