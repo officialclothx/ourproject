@@ -144,6 +144,9 @@
 
          form.addEventListener('submit', e => {
             var x = document.getElementById("getform");
+            var name = x.elements[0].value;
+            var pickup = x.elements[9].value;
+            var drop = x.elements[10].value;
             var text = x.elements[5].value;
             console.log(text)
             e.preventDefault()
@@ -172,9 +175,7 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         }})
-             var name = x.elements[0].value;
-            var pickup = x.elements[9].value;
-            var drop = x.elements[10].value;
+             
              console.log(name)
             console.log(pickup)
             console.log(drop)
